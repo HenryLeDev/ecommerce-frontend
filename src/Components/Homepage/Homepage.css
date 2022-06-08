@@ -1,0 +1,32 @@
+.productBox {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+}
+
+.homepageContainer {
+  margin-top: 50px;
+}
+
+.topsellerBox {
+  margin-top: 50px;
+  margin-left: 220px;
+}
+
+.newArrivedBox {
+  margin-top: 50px;
+  margin-left: 220px;
+}
+

@@ -1,0 +1,12 @@
+.container {
+    position: relative; 
+    display: flex; 
+    justify-content: 
+    space-around; 
+    align-items:center;
+}
+
+.brandLogos {
+    width: 5%;
+    margin-top: 30px;
+}

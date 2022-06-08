@@ -1,0 +1,20 @@
+.App {
+    text-align: left;
+}
+
+.col-lg-8{
+    width: 40%;  
+}
+
+.col-lg-4 {
+    width: 20%;
+}
+
+.row {
+    justify-content: center;
+    width: 100%;
+}
+
+.removeDiv {
+   margin-top: 100px;
+}

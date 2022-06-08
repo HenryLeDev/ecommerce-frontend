@@ -1,0 +1,20 @@
+.containerProductDetails {
+    margin-top: 100px;
+}
+
+.productDetailsInfo {
+    font-size: 14px;
+    padding-right: 50%
+}
+
+.cartButton {
+    width: 50%;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.productImage {
+    width: 60%;
+}

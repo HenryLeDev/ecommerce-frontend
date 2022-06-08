@@ -1,0 +1,51 @@
+.leftSize_main {
+    height: 100%;
+    width: 180px;
+    border-right: 1px solid;
+    padding: 40px;
+}
+
+.leftSide_header {
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+
+.brandname {
+    display: block;
+    width: 100px;
+}
+
+.rightSide_main {
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.product_name {
+    font-size: 18px!important;
+    line-height: 24px!important;
+    font-weight: bold;
+}
+
+.product_rating {
+    font-size: 14px;
+    color: #007185;
+}
+
+.product_price {
+    color: #B12704;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.container2 {
+    width: 250px;
+    margin: 50px;
+}
