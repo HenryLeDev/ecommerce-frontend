@@ -4,7 +4,8 @@ import Checkout from './Components/Checkout/Checkout';
 import Cart from './Components/Cart/Cart';
 import Content from './Components/Content/Content';
 import Productdetails from './Components/Productdetails/Productdetails';
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import { HashRouter as Router, Routes, Route} from "react-router-dom"
+
 import NavBar from './Components/NavBar/NavBar';
 import CartContextProvider from './Components/CartContext';
 import Confirmation from './Components/Checkout/Confirmation';
