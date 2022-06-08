@@ -19,7 +19,7 @@ import ContentOnePlus from './Components/Content/FilteredContent/ContentOnePlus'
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
     <div className="App">
        <NavBar />   
        <CartContextProvider>
