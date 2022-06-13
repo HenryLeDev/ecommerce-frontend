@@ -4,7 +4,7 @@ import Checkout from './Components/Checkout/Checkout';
 import Cart from './Components/Cart/Cart';
 import Content from './Components/Content/Content';
 import Productdetails from './Components/Productdetails/Productdetails';
-import { HashRouter as Router, Routes, Route} from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 import NavBar from './Components/NavBar/NavBar';
 import CartContextProvider from './Components/CartContext';
@@ -19,12 +19,12 @@ import ContentOnePlus from './Components/Content/FilteredContent/ContentOnePlus'
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router >
     <div className="App">
        <NavBar />   
        <CartContextProvider>
        <Routes>
-       <Route path='' element={ <Homepage /> } />
+       <Route path='/' element={ <Homepage /> } />
        <Route path='/products' element={<Content />} />
        <Route path='/products/apple' element={<ContentApple />} />
        <Route path='/products/samsung' element={<ContentSamsung />} />

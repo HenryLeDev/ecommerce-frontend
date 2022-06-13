@@ -18,7 +18,7 @@ function ImageSlider() {
     <Slider {...settings}>
       <div className='sliderBox1'>
       <h2 className='sliderFont1'>Beste Smartphones <br></br>zu günstigen Preisen kaufen</h2>
-      <a href="/#/products"  className="btn btn-primary sliderButton1" >Jetzt durchstöbern</a>
+      <a href="/products"  className="btn btn-primary sliderButton1" >Jetzt durchstöbern</a>
       </div>
       <div className='sliderBox2'>
       <h1 className='sliderFont2'>Entdecke noch heute <br></br>dein neues Smartphone</h1>
@@ -26,7 +26,7 @@ function ImageSlider() {
       <div className='sliderBox3'>
       <div className='sliderElements3'>
       <h2 className='sliderFont3'>Top Marken <br></br>unter anderem <br></br>Samsung</h2>
-      <a href="/#/products/Samsung"  className="btn btn-primary sliderButton3" >Samsung Geräte ansehen</a>
+      <a href="/products/Samsung"  className="btn btn-primary sliderButton3" >Samsung Geräte ansehen</a>
       </div>
       </div>
     </Slider>
