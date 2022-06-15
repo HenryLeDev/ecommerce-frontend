@@ -11,7 +11,7 @@ function Cart(props) {
   var checkItem = item ? item.length : 0;
   const cartValue = function(){
     let price=0;
-    for(let i=0;i<item.length;i++){
+    for(let i=0;i<checkItem;i++){
         price+=parseInt(item[i].price);
     }
     return price;
