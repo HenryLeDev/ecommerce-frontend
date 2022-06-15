@@ -5,7 +5,7 @@ export const CartContext = createContext();
 class CartContextProvider extends Component {
     constructor(props) {
         super(props);
-        let existingCart = localStorage.getItem('myCart') !== undefined ? JSON.parse(localStorage.getItem('myCart')) : [];
+        let existingCart = localStorage.getItem('myCart') !== undefined ? JSON.parse(localStorage.getItem('myCart')) : 0;
         let cardAmount=existingCart.length;
 
         this.state = { 
