@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 
 function Cart(props) {
   const [paymentMethod, setpaymentMethod] = useState("");
- 
   const {item,size,increment} = useContext(CartContext);
+  var checkItem = item ? item.length : 0;
   const cartValue = function(){
     let price=0;
     for(let i=0;i<item.length;i++){
@@ -43,7 +43,7 @@ function Cart(props) {
                         <div className="card-body">
     
                         { 
-                                item.length >0 ?
+                                checkItem >0 ?
                                 item.map( (value) => (
                                     <CheckoutItems definition={value} />
                                 ))
