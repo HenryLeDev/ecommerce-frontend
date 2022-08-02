@@ -5,8 +5,7 @@ import { CartContext } from '../CartContext';
 import { Link } from 'react-router-dom';
 
 
-function Cart(props) {
-  const [paymentMethod, setpaymentMethod] = useState("");
+function Cart() {
   const {item,size,increment} = useContext(CartContext);
   var checkItem = item ? item.length : 0;
   const cartValue = function(){
@@ -17,18 +16,6 @@ function Cart(props) {
     return price;
     }
 
- 
-//   function vorkasseOrPaypal() {
-//     var checkBoxVorkasse = document.getElementById("CheckVorkasse");
-//     var checkBoxPaypal = document.getElementById("CheckPaypal");
-    
-//     if (checkBoxVorkasse.checked === true) {
-//         setpaymentMethod("Vorkasse")
-//     } else {
-//         setpaymentMethod("Paypal")
-//     } 
-//     console.log(paymentMethod)
-//   }
   
   return (
     <section className='section'>
@@ -79,13 +66,6 @@ function Cart(props) {
                                     </div>
                                     <span><strong>{ cartValue() }€<span ></span></strong></span>
                                 </li>
-                               
-                                    {/* <label className='brandname' >
-                                        <input type="radio" name="flexRadioDefault" id="CheckVorkasse" onClick={vorkasseOrPaypal} /> Vorkasse
-                                    </label>
-                                    <label className='brandname' >
-                                        <input type="radio" name="flexRadioDefault" id="CheckPaypal" onClick={vorkasseOrPaypal} /> Paypal
-                                    </label> */}
                                
                             </ul>
                             <center>

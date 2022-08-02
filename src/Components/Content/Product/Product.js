@@ -1,8 +1,6 @@
 import React from 'react'
 
 
-import getSymbolFromCurrency from 'currency-symbol-map'
-
 function Product(props) {
   return (
     <div className='container2'>
@@ -16,7 +14,7 @@ function Product(props) {
          {props.definition.category}
         </div>  
         <div className='product_price'>
-        {props.definition.price} {getSymbolFromCurrency('EUR')}
+        {props.definition.price} €
         </div>
     </div>
   )

@@ -15,11 +15,6 @@ function Checkout() {
     return price;
     }
 
-    function Payment() {
-        alert("Payment Successful. Check youre Email please.");
-    }
-
-
   return (
     <section className='section'>
             
