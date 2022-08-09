@@ -45,6 +45,7 @@ function Productslider() {
       }
 
   
+  // slider settings
   const settings = {
         arrows: false,
         dots: false,

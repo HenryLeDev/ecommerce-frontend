@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./ImageSlider.css"
 
 function ImageSlider() {
+  // slider settings
   var settings = {
     arrows: true,
     dots: false,

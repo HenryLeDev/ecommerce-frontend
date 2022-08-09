@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 function Checkout() {
   const {item,size,increment} = useContext(CartContext);
   var checkItem = item ? item.length : 0;
+  
+  // cartValue price function
   const cartValue = function(){
     let price=0;
     for(let i=0;i<checkItem;i++){
@@ -135,7 +137,6 @@ function Checkout() {
                         </li>
                     </ul>
                     <center>
-                     {/* <form action="" method="post" > </form>  */}
                      <Link to={`/checkout/Confirmation`} >
                     <button type='submit'  className="btn btn-primary btn-block waves-effect waves-light">Jetzt kaufen</button>
                     </Link>

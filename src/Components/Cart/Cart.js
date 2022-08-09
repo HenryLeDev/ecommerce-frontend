@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 function Cart() {
   const {item,size,increment} = useContext(CartContext);
   var checkItem = item ? item.length : 0;
+ 
+ // cartValue price function
   const cartValue = function(){
     let price=0;
     for(let i=0;i<checkItem;i++){
@@ -30,12 +32,12 @@ function Cart() {
                         <div className="card-body">
     
                         { 
-                                checkItem >0 ?
-                                item.map( (value) => (
-                                    <CheckoutItems definition={value} />
-                                ))
-                                : <div style={{height: "100vh", margin: "30px" }}> Der Warenkorb ist leer.</div>
-                            }
+                            checkItem >0 ?
+                            item.map( (value) => (
+                            <CheckoutItems definition={value} />
+                            ))
+                            : <div style={{height: "100vh", margin: "30px" }}> Der Warenkorb ist leer.</div>
+                        }
     
     
                         </div>

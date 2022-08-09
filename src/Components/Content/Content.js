@@ -19,6 +19,7 @@ function Content() {
    
 },[]);
 
+  // filter function
    function categoryFilter() {
     var checkBoxDefault = document.getElementById("CheckDefault");
      var checkBoxApple = document.getElementById("Check1");

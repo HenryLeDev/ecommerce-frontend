@@ -28,18 +28,21 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
+      # Installs packages
       - name: Npm Install Packages
         run: npm install
         
+      # Runs test and Code Coverage
       - name: Test & Code Coverage
         run: npm test -- --coverage
         
+      # Uploads result on Code Coverage
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           
+      #Build package
       - name: Build Package
         env:
           CI: false

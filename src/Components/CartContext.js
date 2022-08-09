@@ -8,8 +8,10 @@ class CartContextProvider extends Component {
         let existingCart = localStorage.getItem('myCart') !== null ? JSON.parse(localStorage.getItem('myCart')) : [] ;
         
 
+        // set state 
         this.state = { 
             item:  existingCart,
+            // add a product
             increment: (value) => {
                 let itemList= this.state.item;
                 itemList.push(value);
@@ -18,6 +20,7 @@ class CartContextProvider extends Component {
 
                 this.state.saveToLocalCache();
             },
+            // remove a product
              decrement: (value) => {
                  for(let i= 0; i < existingCart.length; i++) {
                      if (value === existingCart[i].id) {
